@@ -1,10 +1,138 @@
+/* I KNOW THIS LAB IS REALLY CRAPPY XD 
+I LOOKED AT THINGS TOO LONG AND CANNOT THINK STRAIGHT ANYMORE 
+IT WILL NOT GET ANY BETTER AT THIS MOMENT
+*/
+
 /*
 Colors to use:
 dark blue: #06365f
 light blue: #1c5380
 */
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+ /* background: linear-gradient(to bottom,#40769C, 50%, white 50%);*/
+  background: linear-gradient(to bottom, #40769C 0%,#326386 50%,white 50%,white 100%);
+}
+
+h1 {
+  color: #06365f;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.container {
+  /*background-color: lightblue;*/
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.iphone, .content {
+  flex: 1 1 300px;
+  height: 600px; 
+  /* I still need to do something with the heigth...*/
+}
+
+.iphone {
+  background-color: lightcoral;
+}
+
+.picture-phone {
+  background-color: lightslategray;
+  /* Hmmm, it looked so easy during class xD*/
+  /* Letting it go for now and look at the rest*/
+  /*
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  */
+  /*margin-left: 250px;*/
+}  
+
+
+.content {
+ /* background-color: lightgreen;*/
+}
+
+.top-bar {
+  /*background-color:seagreen;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login {
+  background-color: #1c5380;  
+  padding: 20px;
+}
+
+.button {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 30px 0 10px;
+}
+
+.info {
+  /*background-color: mediumslateblue;*/
+  background-image: url('/lab-css-instagram-clone/images/frame.png');
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  /*position: relative;*/
+  
+}
+
+/*
+.info:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-image: url('/lab-css-instagram-clone/images/frame.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+*/
+
+.box {
+  /*background-color: peru;*/
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0; 
+ /* position: relative;*/
+}
+
+
+.buttons {
+  /*background-color: purple;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  justify-content: space-between;
 }
